@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <h1 class="mb-3" style="background-color: aqua;">Library</h1>
+    </div>
+
+  <div class="container mt-5">
+    <form id="new-book-form">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" placeholder="Title">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" id="author" placeholder="Author">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="pages">Pages</label>
+          <input type="number" class="form-control" id="pages" placeholder="Pages">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="status">Status</label>
+          <select id="status" class="form-control">
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" value="submit">Add Book</button>
+    </form>
+    <table id="book-list" class="table mt-4">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Book list will be populated dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  <script src="utitlity.js"></script>
+
+</body>
+</html>
